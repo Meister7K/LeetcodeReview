@@ -68,7 +68,7 @@ var map = function(arr, fn) {
  * @param {Function} fn
  * @return {number[]}
  */
-var map = function(arr, fn) {
+var map1 = function(arr, fn) {
   var mappedArray = [];
   for (var i = 0; i < arr.length; i++) {
     mappedArray.push(fn(arr[i], i));
@@ -76,7 +76,7 @@ var map = function(arr, fn) {
   return mappedArray;
 };
 // Code in TypeScript
-function map<T, U>(arr: T[], fn: (value: T, index: number) => U): U[] {
+function map2<T, U>(arr: T[], fn: (value: T, index: number) => U): U[] {
   const mappedArray: U[] = [];
   for (let i = 0; i < arr.length; i++) {
     mappedArray.push(fn(arr[i], i));
